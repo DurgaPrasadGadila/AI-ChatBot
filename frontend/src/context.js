@@ -27,20 +27,24 @@ const AppProvider = ({ children }) => {
     setMessages(tempMessages);
     setMessageText("");
 
-    // Scroll into view safely
     setTimeout(() => {
       lastMsg.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
 
     try {
       setProcessing(true);
-      const res = await fetch(`http://localhost:5500`, {
+
+      // Use the deployed backend URL from .env or fallback
+      const apiUrl =
+        process.env.REACT_APP_API_URL || "https://neurobot-api.vercel.app";
+
+      const res = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          messages: tempMessages.slice(-8), // Keep last 8 messages for context
+          messages: tempMessages.slice(-8), // Last 8 messages for context
         }),
       });
 
@@ -72,7 +76,6 @@ const AppProvider = ({ children }) => {
       ]);
     }
 
-    // Scroll again after new message
     setTimeout(() => {
       lastMsg.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
