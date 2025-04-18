@@ -10,7 +10,7 @@ const Title = () => {
           <div className={styles.image}>
             <img src={chatbot} alt="AI" />
           </div>
-          <p>AI Assistant</p>
+          <p>NeuroBot - AI Assistant</p>
         </div>
       </div>
     </div>

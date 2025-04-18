@@ -30,7 +30,7 @@ const Navbar = () => {
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
           <Link to="/home" className="nav-logo">
-            IntelliChat
+            NeuroBot
             {/* <FontAwesomeIcon icon={Icons.fax} size="6px" /> */}
           </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                ChatBot
+                NeuroBot
               </Link>
             </li>
             <li className="nav-item">

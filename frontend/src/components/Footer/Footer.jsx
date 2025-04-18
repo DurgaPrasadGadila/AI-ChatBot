@@ -12,18 +12,18 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <p>
-          Copyright © 2023 IntelliChat. Designed By{" "}
-          <a href="https://www.linkedin.com/in/its-kumar-yash/">Yash Kumar</a>
+          Copyright © 2025 NeuroBot. Designed By{" "}
+          <a href="https://www.linkedin.com/">Durga Prasad Gadila</a>
         </p>
       </div>
       <div className={styles.handles}>
-        <a href="#">
+        <a href="https://www.instagram.com/">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="https://github.com/its-kumar-yash">
+        <a href="https://github.com/">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://www.linkedin.com/in/its-kumar-yash/">
+        <a href="https://www.linkedin.com/">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>

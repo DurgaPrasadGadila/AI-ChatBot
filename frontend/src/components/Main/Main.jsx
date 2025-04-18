@@ -17,16 +17,14 @@ const Main = () => {
             <img src={ConversationalImg} alt="ConversationalImg" />
           </div>
           <div className={styles.text}>
-            <h1 className={styles.cardTitle}>Open AI Powered</h1>
+            <h1 className={styles.cardTitle}>Groq AI Powered</h1>
             <p>
-              IntelliChat is a Open AI powered chat bot based on
-              text-davinci-003 that leverages the capabilities of GPT-3,
-              specifically the Davinci variant. With a vast knowledge base,
-              contextual understanding, and natural language processing
-              capabilities, this chatbot excels at engaging in human-like
-              conversations. The text-davinci-003 model offers enhanced language
-              generation abilities, enabling it to provide more detailed and
-              nuanced responses.
+              NeuroBot is a high-performance AI chatbot powered by Groq AI,
+              leveraging cutting-edge LLM acceleration for ultra-fast response
+              generation. Running on Groq's next-gen Language Processing Units
+              (LPUs), NeuroBot integrates with advanced open models like LLaMA,
+              Gemma, or other Groq-compatible LLMs to deliver lightning-fast and
+              context-aware conversations.
             </p>
           </div>
         </div>
@@ -37,7 +35,7 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Conversational ChatBot</h1>
             <p>
-              IntelliChat is a conversational AI chatbot designed to engage in
+              NeuroBot is a conversational AI chatbot designed to engage in
               dynamic and interactive conversations. It exhibits exceptional
               natural language understanding and generation capabilities,
               enabling it to respond to user queries, hold meaningful
@@ -53,7 +51,7 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Responsive & Clean UI</h1>
             <p>
-              IntelliChat is also accompanied by a clean and responsive user
+              NeuroBot is also accompanied by a clean and responsive user
               interface(UI). The UI is designed to provide a seamless and
               intuitive user experience, allowing users to interact with the
               chatbot effortlessly. The responsive nature of the UI ensures that

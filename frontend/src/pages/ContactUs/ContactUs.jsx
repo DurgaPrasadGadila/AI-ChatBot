@@ -7,7 +7,8 @@ import { addDoc, collection } from "firebase/firestore";
 import { ThreeCircles } from "react-loader-spinner";
 
 const ContactUs = () => {
-  const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const regex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -32,15 +33,13 @@ const ContactUs = () => {
         setErrorMsg("");
       }, 3000);
       return;
-    }
-    else if (/^[^a-zA-Z]*$/.test(values.name)){
+    } else if (/^[^a-zA-Z]*$/.test(values.name)) {
       setErrorMsg("Enter a valid name");
       setTimeout(() => {
         setErrorMsg("");
       }, 3000);
       return;
-    }
-    else if(!regex.test(values.email)){
+    } else if (!regex.test(values.email)) {
       setErrorMsg("Enter a valid email");
       setTimeout(() => {
         setErrorMsg("");
@@ -135,10 +134,10 @@ const ContactUs = () => {
             </div>
 
             <div className={styles.footer}>
-              {errorMsg == "" ? null : (
+              {errorMsg === "" ? null : (
                 <b className={styles.error}>{errorMsg}</b>
               )}
-              {isSubmitted == "" ? null : (
+              {isSubmitted === "" ? null : (
                 <b className={styles.success}>{isSubmitted}</b>
               )}
               <button
@@ -152,7 +151,6 @@ const ContactUs = () => {
                 <span>
                   <Link to="/home">Home</Link>
                 </span>
-                .
               </p>
             </div>
           </div>

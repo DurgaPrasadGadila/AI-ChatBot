@@ -12,11 +12,11 @@ const Body = () => {
       {messages.map((msg, index) => (
         <div
           className={`${styles.message} ${
-            msg.from == "ai" ? styles.mLeft : styles.mRight
+            msg.from === "ai" ? styles.mLeft : styles.mRight
           }`}
           key={index}
         >
-          {msg.from == "ai" ? (
+          {msg.from === "ai" ? (
             <div>
               <div className={styles.image}>
                 <img src={chatbot} alt="AI" />
@@ -27,7 +27,7 @@ const Body = () => {
           )}
           
           <p className={styles.text}>{msg.text}</p>
-          {msg.from != "ai" ? (
+          {msg.from !== "ai" ? (
             <div>
               <div className={styles.image}>
                 <img src={user} alt="user" />

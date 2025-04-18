@@ -11,8 +11,8 @@ const Header = () => {
           "Unlock Productivity with an AI ChatBot by your Side"
         </p>
         <p className={styles.subHeading}>
-          IntelliChat is a OpenAI powered tool that brings AI chatbots to the
-          next level of sophistication and intelligence. IntelliChat can engage
+          NeuroBot is a Groq powered tool that brings AI chatbots to the
+          next level of sophistication and intelligence. NeuroBot can engage
           in multi-turn conversations, remembering previous interactions and
           providing relevant follow-up responses.
         </p>
