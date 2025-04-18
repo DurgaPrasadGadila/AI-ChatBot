@@ -1,6 +1,16 @@
 const axios = require("axios");
 
 module.exports = async function handler(req, res) {
+  // Add CORS headers to allow all origins
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
+  // Handle OPTIONS request for preflight check
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
   if (req.method === "GET") {
     return res.status(200).json({
       message: "Hello, world! chatbot running on Groq API!",
@@ -65,6 +75,7 @@ module.exports = async function handler(req, res) {
     }
   }
 
+  // If method is not GET or POST, return 405 Method Not Allowed
   res.setHeader("Allow", ["GET", "POST"]);
   res.status(405).end(`Method ${req.method} Not Allowed`);
-}
+};
