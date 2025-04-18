@@ -36,7 +36,7 @@ const AppProvider = ({ children }) => {
 
       // Use the deployed backend URL from .env or fallback
       const apiUrl =
-        process.env.REACT_APP_API_URL || "https://neurobot-api.vercel.app";
+        process.env.REACT_APP_API_URL || "https://neurobot-api.vercel.app/api";
 
       const res = await fetch(apiUrl, {
         method: "POST",
